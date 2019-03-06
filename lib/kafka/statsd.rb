@@ -26,7 +26,7 @@ module Kafka
   module Statsd
     DEFAULT_NAMESPACE = "ruby_kafka"
     DEFAULT_HOST = '127.0.0.1'
-    DEFAULT_PORT = 8125
+    DEFAULT_PORT = 8145
 
     def self.statsd
       @statsd ||= ::Statsd.new(DEFAULT_HOST, DEFAULT_PORT).tap { |sd| sd.namespace = DEFAULT_NAMESPACE }
